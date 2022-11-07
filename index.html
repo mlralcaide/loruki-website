@@ -18,18 +18,50 @@
 
   <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <!-- <div class="navbar">
       <div class="container flex">
         <h1 class="logo">Loruki.</h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="features.html">Features</a></li>
-            <li><a href="docs.html">Docs</a></li>
+            <li><a href="docs.html">Docs</a></li>            
           </ul>
         </nav>
       </div>
-    </div>
+    </div> -->
+
+    <!-- <nav class="new-navbar">
+      <div class="container-logo">
+        <h1 class="logo">Loruki.</h1>
+      </div>
+        <ul class="nav-list" id="navi-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="docs.html">Docs</a></li>            
+        </ul>
+        <a href="#" class="menu" id="toggle-button">
+          <i class="fas fa-bars"></i>
+        </a>
+        <div class="menu" id="toggle-button">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </div>
+    </nav>  -->
+
+    <nav class="nav-area">
+      <div class="container-logo">
+        <h1 class="logo">Loruki.</h1>
+      </div>
+      <input type="checkbox" id="box" />
+      <label for="box" class="btn-area"><i class="fa fa-bars"></i></label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="docs.html">Docs</a></li>
+      </ul>
+    </nav>
 
     <!-- Showcase -->
     <section class="showcase">
@@ -46,8 +78,13 @@
 
         <div class="showcase-form card">
           <h2>Request a Demo</h2>
-          <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact">
+          <form
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <p class="hidden">
               <label>
                 Don't fill this out if you're human: <input name="bot-field" />
@@ -187,4 +224,13 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    const toggleButton = document.getElementById("toggle-button");
+    const naviList = document.getElementById("navi-list");
+
+    toggleButton.addEventListener("click", () => {
+      naviList.classList.toggle("active");
+    });
+  </script>
 </html>
