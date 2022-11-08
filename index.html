@@ -11,57 +11,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <!-- STYLESHEETS -->
+
+    <!-- General Styling -->
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+
+    <!-- Homepage -->
+    <link rel="stylesheet" href="css/home/cli.css" />
+    <link rel="stylesheet" href="css/home/cloud.css" />
+    <link rel="stylesheet" href="css/home/docs.css" />
+    <link rel="stylesheet" href="css/home/features.css" />
+    <link rel="stylesheet" href="css/home/languages.css" />
+    <link rel="stylesheet" href="css/home/showcase.css" />
+    <link rel="stylesheet" href="css/home/stats.css" />
+
     <title>Loruki | Cloud Hosting For Everybody</title>
   </head>
 
   <body>
     <!-- Navbar -->
-    <!-- <div class="navbar">
-      <div class="container flex">
-        <h1 class="logo">Loruki.</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="docs.html">Docs</a></li>            
-          </ul>
-        </nav>
-      </div>
-    </div> -->
-
-    <!-- <nav class="new-navbar">
-      <div class="container-logo">
-        <h1 class="logo">Loruki.</h1>
-      </div>
-        <ul class="nav-list" id="navi-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="docs.html">Docs</a></li>            
-        </ul>
-        <a href="#" class="menu" id="toggle-button">
-          <i class="fas fa-bars"></i>
-        </a>
-        <div class="menu" id="toggle-button">
-          <div class="menu-line"></div>
-          <div class="menu-line"></div>
-          <div class="menu-line"></div>
-        </div>
-    </nav>  -->
-
-    <nav class="nav-area">
-      <div class="container-logo">
-        <h1 class="logo">Loruki.</h1>
-      </div>
+    <div class="nav-area">
       <input type="checkbox" id="box" />
       <label for="box" class="btn-area"><i class="fa fa-bars"></i></label>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="docs.html">Docs</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Features</a></li>
       </ul>
-    </nav>
+    </div>
 
     <!-- Showcase -->
     <section class="showcase">
@@ -225,12 +206,7 @@
     </footer>
   </body>
 
-  <script>
-    const toggleButton = document.getElementById("toggle-button");
-    const naviList = document.getElementById("navi-list");
-
-    toggleButton.addEventListener("click", () => {
-      naviList.classList.toggle("active");
-    });
-  </script>
+  <!-- Always place script files at the end of the html file to render script last 
+for performance. -->
+  <script src="js/nav-toggle.js"></script>
 </html>
