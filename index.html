@@ -11,24 +11,37 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <!-- STYLESHEETS -->
+
+    <!-- General Styling -->
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+
+    <!-- Homepage -->
+    <link rel="stylesheet" href="css/home/cli.css" />
+    <link rel="stylesheet" href="css/home/cloud.css" />
+    <link rel="stylesheet" href="css/home/docs.css" />
+    <link rel="stylesheet" href="css/home/features.css" />
+    <link rel="stylesheet" href="css/home/languages.css" />
+    <link rel="stylesheet" href="css/home/showcase.css" />
+    <link rel="stylesheet" href="css/home/stats.css" />
+
     <title>Loruki | Cloud Hosting For Everybody</title>
   </head>
 
   <body>
     <!-- Navbar -->
-    <div class="navbar">
-      <div class="container flex">
-        <h1 class="logo">Loruki.</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="docs.html">Docs</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="nav-area">
+      <input type="checkbox" id="box" />
+      <label for="box" class="btn-area"><i class="fa fa-bars"></i></label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Features</a></li>
+      </ul>
     </div>
 
     <!-- Showcase -->
@@ -46,8 +59,13 @@
 
         <div class="showcase-form card">
           <h2>Request a Demo</h2>
-          <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-            <input type="hidden" name="form-name" value="contact">
+          <form
+            name="contact"
+            method="POST"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <p class="hidden">
               <label>
                 Don't fill this out if you're human: <input name="bot-field" />
@@ -187,4 +205,8 @@
       </div>
     </footer>
   </body>
+
+  <!-- Always place script files at the end of the html file to render script last 
+for performance. -->
+  <script src="js/nav-toggle.js"></script>
 </html>
