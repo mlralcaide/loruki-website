@@ -1,7 +1,7 @@
 /* Navigation  */
 
 .nav-area {
-  background: var(--primary-color);
+  background: var(--dark-color);
   height: 62px;
   width: 100%;  
   display: flex;
@@ -75,7 +75,7 @@
     font-size: 30px;
   }
   .nav-area ul li:hover {
-    background: var(--dark-color);
+    background: var(--primary-color);
   }
   .nav-area ul li a:hover {
     background: none;
