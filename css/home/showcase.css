@@ -5,26 +5,35 @@
   position: relative;
 }
 
-.showcase h1 {
+.showcase__title {
   font-size: 40px;
-  
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+  margin-top: 40px;  
 }
 
-.showcase p {
+.showcase__form-title {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;   
+}
+
+.showcase__description {
   margin: 20px 0;
 }
 
-.showcase .grid {
+.showcase .grid{
   overflow: visible;
   /* grid-template-columns: 55% 45%;
   gap: 30px; */
 }
 
-.showcase-text {
+.showcase__text-area {
   animation: slideInFromLeft 1s ease-in;
 }
 
-.showcase-form {
+.showcase__form {
   position: relative;
   top: 60px;
   height: 350px;
@@ -35,12 +44,21 @@
   /* justify-self: flex-end; */
 }
 
-.showcase-form .form-control {
+.showcase__form .card {
+  width: 400px;
+}
+
+.showcase__form--control {
   margin: 30px 0;
 }
 
-.showcase-form input[type="text"],
-.showcase-form input[type="email"] {
+.showcase__form--hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+.showcase__form input[type="text"],
+.showcase__form input[type="email"] {
   border: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;
@@ -48,7 +66,7 @@
   font-size: 16px;
 }
 
-.showcase-form input:focus {
+.showcase__form input:focus {
   outline: none;
 }
 
@@ -65,4 +83,28 @@
   -webkit-transform: skewY(-3deg); /*Para Chrome */
   -moz-transform: skewY(-3deg); /*Para Safari-Mozila */
   -ms-transform: skewY(-3deg); /*Para MicroSoft-Internet Explorer */
+}
+
+@media all and (max-width: 768px) {
+  .showcase .grid   {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase__text-area {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .showcase__form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+
 }

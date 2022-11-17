@@ -1,4 +1,16 @@
 /* Footer */
-.footer .social a {
+.footer__social-icon {
   margin: 0 10px;
+}
+
+.footer__list--item {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@media all and (max-width: 768px) {
+  .footer .grid  {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }

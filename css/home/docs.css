@@ -18,3 +18,19 @@
 .docs-main a:hover {
   font-weight: bold;
 }
+
+@media all and (max-width: 768px) {
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .docs-head {
+    text-align: center;
+  }
+
+  .docs-head img {
+    justify-self: center;
+  }
+  
+}

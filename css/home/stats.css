@@ -4,16 +4,23 @@
   animation: slideInFromBottom 1s ease-in;
 }
 
-.stats-heading {
+.stats__heading {
   max-width: 500px;
   margin: auto;
 }
 
-.stats .grid h3 {
+.stats__icons-title {
   font-size: 35px;
 }
 
-.stats .grid p {
+.stats__icons-description {
   font-size: 20px;
   font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+  .stats .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }

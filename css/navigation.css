@@ -1,49 +1,60 @@
 /* Navigation  */
-
-.nav-area {
-  background: var(--primary-color);
+.nav__area {
+  position: fixed;
+  background: var(--secondary-color);
   height: 62px;
   width: 100%;  
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  position: fixed;
+  justify-content: space-between;
+  align-items: center;  
   z-index: 10;
 }
-.logo {
-  color: #fff;
-  line-height: 70px;
+
+.nav__container{
+  justify-content: space-between;
+  align-items: center;  
+  display:flex; 
+  height: 60px;
+  max-width: 1100px;
+  margin: 0 auto;  
   padding: 0 40px;
 }
-.nav-area a:hover {
-  background-color: var(--secondary-color);
+
+.nav__container-logo {
+  color: #fff;
+  line-height: 70px;
+  /* padding: 0 40px; */
+
 }
-.nav-area ul {
+.nav__container-menu a:hover {
+  background-color: var(--dark-color);
+}
+.nav__container-menu {
   float: right;
   margin-right: 20px;
+ 
 }
-.nav-area ul li {
+.nav__container-menu--item {
   display: inline-block;
   line-height: 60px;
   margin: 0 5px;
+  
 }
-.nav-area ul li a {
+.nav__container-menu--item a {
   color: #fff;
   font-size: 14px;
   padding: 22px 15px;
   text-transform: uppercase;
   font-weight: bold;
 }
-.nav-area ul li a:hover {
-  background: var(--secondary-color);
-  transition: 0.5s;  
+.nav__container-menu--item a:hover {
+  background: var(--dark-color);
+  transition: 0.5s;
 }
-.btn-area {
+.nav__container-btn {
   font-size: 30px;
   color: white;
   float: right;
-  line-height: 62px;
-  margin-right: 40px;
+  line-height: 62px;  
   cursor: pointer;
   display: none;
 }
@@ -51,10 +62,10 @@
   display: none;
 }
 @media (max-width: 860px) {
-  .btn-area {
+  .nav__container-btn {
     display: block;
   }
-  .nav-area ul {
+  .nav__container-menu {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -63,24 +74,29 @@
     left: -100%;
     text-align: center;
     transition: all 0.5s;
-    z-index: 9;      
+    z-index: 9;
   }
-  .nav-area ul li {
+  .nav__container-menu--item {
     display: block;
     margin: 0;
     line-height: 30px;
     padding: 25px 0;
   }
-  .nav-area ul li a {
+  .nav__container-menu--item a {
     font-size: 30px;
   }
-  .nav-area ul li:hover {
+  .nav__container-menu--item:hover {
     background: var(--dark-color);
   }
-  .nav-area ul li a:hover {
+  .nav__container-menu--item a:hover {
     background: none;
   }
-  #box:checked ~ ul {
-    left: 0;
+   
+  #box:checked ~ .nav__container-menu {
+    left: 0;   
+  }
+
+  .showcase__form {
+    width: 300px;
   }
 }
