@@ -34,21 +34,28 @@
 
   <body>
     <!-- Navbar -->
-   
-      <div class="nav__area">
-        <div class="nav__container">
-          <h1 class="nav__container-logo">Loruki.</h1>
-          <input type="checkbox" id="box" />
-          <label for="box" class="nav__container-btn"><i class="fa fa-bars"></i></label>
-          <ul class="nav__container-menu">
-            <li class="nav__container-menu--item"><a href="index.html">Home</a></li>
-            <li class="nav__container-menu--item"><a href="docs.html">Docs</a></li>
-            <li class="nav__container-menu--item"><a href="features.html">Features</a></li>
-          </ul>
-        </div>
+    <div class="nav__area">
+      <div class="nav__container">
+        <h1 class="nav__container-logo">Loruki.</h1>
+        <input type="checkbox" id="box" class="nav__container-input"/>
+        <label for="box" class="nav__container-btn"
+          ><i class="fa fa-bars"></i
+        ></label>
+        <ul class="nav__container-menu">
+          <li class="nav__container-menu--item">
+            <a href="index.html" class="nav__container-menu-link">Home</a>
+          </li>
+          <li class="nav__container-menu--item">
+            <a href="docs.html" class="nav__container-menu-link">Docs</a>
+          </li>
+          <li class="nav__container-menu--item">
+            <a href="features.html" class="nav__container-menu-link"
+              >Features</a
+            >
+          </li>
+        </ul>
       </div>
-
-   
+    </div>
 
     <!-- Showcase -->
     <section class="showcase">
@@ -62,7 +69,6 @@
           </p>
           <a href="features.html" class="btn btn-outline">Read More</a>
         </div>
-
         <div class="showcase__form card">
           <h2 class="showcase__form-title">Request a Demo</h2>
           <form
@@ -74,11 +80,11 @@
             <input type="hidden" name="form-name" value="contact" />
             <p class="showcase__form--hidden">
               <label>
-                Don't fill this out if you're human: <input name="bot-field" />
+                Don't fill this out if you're human: <input name="bot-field" class="showcase__form-input"/>
               </label>
             </p>
             <div class="showcase__form--control">
-              <input type="text" name="name" placeholder="Name" required />
+              <input type="text" name="name" placeholder="Name" required class="showcase__form-input"/>
             </div>
             <div class="showcase__form--control">
               <input
@@ -86,20 +92,20 @@
                 name="company"
                 placeholder="Company Name"
                 required
+                class="showcase__form-input"
               />
             </div>
             <div class="showcase__form--control">
-              <input type="email" name="email" placeholder="Email" required />
+              <input type="email" name="email" placeholder="Email" required class="showcase__form-input"/>
             </div>
-            <input type="submit" value="Send" class="btn btn-primary" />
+            <input type="submit" value="Send" class="btn btn-primary" class="showcase__form-input"/>
           </form>
         </div>
       </div>
     </section>
 
     <!-- Stats  -->
-    <!-- my es margin en el eje y (top y botton), mx es margin en el eje x (left y right)-->
-    <!-- fas fa- (font awesome) -->
+
     <section class="stats">
       <div class="stats__container container">
         <h3 class="stats__heading text-center my-1">
@@ -129,12 +135,12 @@
     <!-- Cli -->
     <section class="cli">
       <div class="cli__container container grid">
-        <img src="images/cli.png" alt="" />
+        <img src="images/cli.png" alt="" class="cli__img" />
         <div class="cli__card card">
-          <h3>Easy to use, cross platform CLI</h3>
+          <h3 class="cli__card-text">Easy to use, cross platform CLI</h3>
         </div>
         <div class="cli__card card">
-          <h3>Deploy in seconds</h3>
+          <h3 class="cli__card-text">Deploy in seconds</h3>
         </div>
       </div>
     </section>
@@ -149,7 +155,7 @@
           </p>
           <a href="features.html" class="btn btn-dark">Read More</a>
         </div>
-        <img src="images/cloud.png" alt="" />
+        <img src="images/cloud.png" alt="" class="cloud__img" />
       </div>
     </section>
 
@@ -159,31 +165,31 @@
       <div class="languages__container container flex">
         <div class="languages__card card">
           <h4 class="languages__subtitle">Node.js</h4>
-          <img src="images/logos/node.png" alt="" />
+          <img src="images/logos/node.png" alt="" class="languages__img" />
         </div>
         <div class="languages__card card">
           <h4 class="languages__subtitle">Python</h4>
-          <img src="images/logos/python.png" alt="" />
+          <img src="images/logos/python.png" alt="" class="languages__img" />
         </div>
         <div class="languages__card card">
           <h4 class="languages__subtitle">C#</h4>
-          <img src="images/logos/csharp.png" alt="" />
+          <img src="images/logos/csharp.png" alt="" class="languages__img" />
         </div>
         <div class="languages__card card">
           <h4 class="languages__subtitle">Ruby</h4>
-          <img src="images/logos/ruby.png" alt="" />
+          <img src="images/logos/ruby.png" alt="" class="languages__img" />
         </div>
         <div class="languages__card card">
           <h4 class="languages__subtitle">PHP</h4>
-          <img src="images/logos/php.png" alt="" />
+          <img src="images/logos/php.png" alt="" class="languages__img" />
         </div>
         <div class="languages__card card">
           <h4 class="languages__subtitle">Scala</h4>
-          <img src="images/logos/scala.png" alt="" />
+          <img src="images/logos/scala.png" alt="" class="languages__img" />
         </div>
         <div class="languages__card card">
           <h4 class="languages__subtitle">Clojure</h4>
-          <img src="images/logos/clojure.png" alt="" />
+          <img src="images/logos/clojure.png" alt="" class="languages__img" />
         </div>
       </div>
     </section>
@@ -197,22 +203,33 @@
         </div>
         <nav class="footer__nav">
           <ul class="footer__list">
-            <li class="footer__list--item"><a href="index.html">Home</a></li>
-            <li class="footer__list--item"><a href="features.html">Features</a></li>
-            <li class="footer__list--item"><a href="docs.html">Documentation</a></li>
+            <li class="footer__list-item">
+              <a href="index.html" class="footer__list-link">Home</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="features.html" class="footer__list-link">Features</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="docs.html" class="footer__list-link">Documentation</a>
+            </li>
           </ul>
         </nav>
         <div class="footer__social">
-          <a class="footer__social-icon" href="#"><i class="fab fa-github fa-2x"></i></a>
-          <a class="footer__social-icon" href="#"><i class="fab fa-facebook fa-2x"></i></a>
-          <a class="footer__social-icon" href="#"><i class="fab fa-instagram fa-2x"></i></a>
-          <a class="footer__social-icon" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a class="footer__social-icon" href="#" class="footer__social-linik"
+            ><i class="fab fa-github fa-2x"></i
+          ></a>
+          <a class="footer__social-icon" href="#" class="footer__social-linik"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a class="footer__social-icon" href="#" class="footer__social-linik"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a class="footer__social-icon" href="#" class="footer__social-linik"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
         </div>
       </div>
     </footer>
   </body>
-
-  <!-- Always place script files at the end of the html file to render script last 
-for performance. -->
   <script src="js/nav-toggle.js"></script>
 </html>

@@ -7,6 +7,7 @@
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
   --light-color: #f4f4f4;
+  --white-color: #ffffff;
   --success-color: #5cb85c;
   --error-color: #d9534f;
 }
@@ -42,7 +43,7 @@ img {
 code,
 pre {
   background: #333;
-  color: #fff;
+  color: var(--white-color);
   padding: 10px;
 }
 
@@ -87,5 +88,3 @@ pre {
   }
 }
 
-
-/* New change on style sheet from x developer on same feature/responsive-nav */

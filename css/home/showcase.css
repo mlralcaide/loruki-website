@@ -1,7 +1,7 @@
 /* Showcase */
 .showcase {
   background-color: var(--primary-color);
-  color: #fff;
+  color:var(--white-color);
   position: relative;
 }
 
@@ -24,9 +24,7 @@
 }
 
 .showcase .grid{
-  overflow: visible;
-  /* grid-template-columns: 55% 45%;
-  gap: 30px; */
+  overflow: visible;  
 }
 
 .showcase__text-area {
@@ -36,12 +34,10 @@
 .showcase__form {
   position: relative;
   top: 60px;
-  height: 350px;
-  /* width: 400px; */
+  height: 350px;  
   padding: 40px;
   z-index: 8;
-  animation: slideInFromRight 1s ease-in;
-  /* justify-self: flex-end; */
+  animation: slideInFromRight 1s ease-in;  
 }
 
 .showcase__form .card {
@@ -57,8 +53,8 @@
   height: 0;
 }
 
-.showcase__form input[type="text"],
-.showcase__form input[type="email"] {
+.showcase__form-input[type="text"],
+.showcase__form-input[type="email"] {
   border: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;
@@ -66,7 +62,7 @@
   font-size: 16px;
 }
 
-.showcase__form input:focus {
+.showcase__form-input:focus {
   outline: none;
 }
 
@@ -78,11 +74,11 @@
   bottom: -70px;
   right: 0;
   left: 0;
-  background: #fff;
+  background: var(--white-color);
   transform: skewY(-3deg);
-  -webkit-transform: skewY(-3deg); /*Para Chrome */
-  -moz-transform: skewY(-3deg); /*Para Safari-Mozila */
-  -ms-transform: skewY(-3deg); /*Para MicroSoft-Internet Explorer */
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg); 
 }
 
 @media all and (max-width: 768px) {

@@ -10,7 +10,7 @@
   transition: transform 0.2s ease-in;
 }
 
-.languages .card h4 {
+.languages__subtitle {
   font-size: 20px;
   margin-bottom: 10px;
 }

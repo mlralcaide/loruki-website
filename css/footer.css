@@ -3,10 +3,24 @@
   margin: 0 10px;
 }
 
-.footer__list--item {
+.footer__list-item {
   text-decoration: none;
   list-style-type: none;
 }
+
+.footer__title {
+  color: var(--white-color);
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+.footer__description {
+  margin: 10px 0;
+  color: var(--white-color);
+}
+
+
 
 @media all and (max-width: 768px) {
   .footer .grid  {
